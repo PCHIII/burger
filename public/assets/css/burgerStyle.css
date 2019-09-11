@@ -6,14 +6,20 @@ body {
 img {
 
 width: 250px;
-height: 175px;
+height: 150px;
 
 }
 
-p , h1{
+p {
 
     color: white;
     text-align: center;
+}
+
+h1 {
+    color: white;
+    font-family: 'Modak', cursive;
+    font-weight: bold;
 }
 /* 
 hr {

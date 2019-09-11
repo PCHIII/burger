@@ -1,8 +1,9 @@
 var orm = require('../config/orm.js');
 
-var burger = {all: function(cb){ 
+var burger = {
+    all: function(cb){ 
     orm.all('burgers',function(res){
-        cb(res)
+        cb(res);
     })
 },
 
@@ -11,7 +12,7 @@ update: function(id,cb){
 },
 
 create: function(name,cb){
-    orm.create('burger', name, cb);
+    orm.create('burgers', name, cb);
 }
 }
 
