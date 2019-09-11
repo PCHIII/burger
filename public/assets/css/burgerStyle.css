@@ -1,5 +1,5 @@
 body {
-    background-color: blue;
+    background-color: black;
 }
 
 
@@ -9,3 +9,14 @@ width: 250px;
 height: 175px;
 
 }
+
+p , h1{
+
+    color: white;
+    text-align: center;
+}
+/* 
+hr {
+    
+    border-top: 2px dashed #8c8b8b; 
+} */
