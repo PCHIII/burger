@@ -1,41 +1,49 @@
 <div class="container">
-    <div class="row">
+    {{!-- <div class="row"> --}}
         <div class="col-md-12 text-center mt-3" id="top-ban">
             <h1>EAT ZE BEARGER</h1>
-            
+
             <img src="/assets/img/burger.jpg" alt="Burger">
-<br>
-            <br>
+        </div>
+</div>
+        <br>
+        <br>
+        <div class="container">
             <div class="col-md-12 text-center" class="task">
                 <div class="row">
                     {{#each burger_data}}
                     {{#unless this.devoured}}
                     <div class="col-md-12 text-center">
-                        <p>{{this.ad}} {{this.burger_name}}</p>
+                        <p>{{this.id}}. {{this.burger_name}}</p>
                     </div>
 
-                    <div class="col-md-12 text-center">
-                        <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
-                            <input type="hidden" name="burger_id" type="text" value={{this.id}}>
+                        <div class="col-md-12 text-center">
+                            <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
+                                <input type="hidden" name="burger_id" type="text" value={{this.id}}>
 
 
-                            <button type="submit" class="btn btn-outline-danger btn-sm">Devour It!</button>
-                        </form>
-<br>
+                                <button type="submit" class="btn btn-outline-danger btn-sm">Devour It!</button>
+                            </form>
+                        <br>
 
 
-                    </div>
+                        </div>
 
                 </div>
+
                 {{/unless}}
                 {{/each}}
 
-            </div>
-
+             </div> 
         </div>
+
+      
         <hr>
+        <div class="container">
+           
         <p style="center">DEVOURED BURGERS</p>
-        <div class="col-md-12" class="task">
+        <div class="row justify-content-center">
+        <div class="col-md-4 text-center" class="task">
             {{#each burger_data}}
             {{#if this.devoured}}
             <input class="form-control" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly>
@@ -47,10 +55,11 @@
 <br>
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12 text-center enter_selection">
-            
+        <div class="col-md-6 text-center enter_selection">
+
             <form action="/burgers/create" method="POST">
-                <input type="text" name="burger_name" class="form-control" placeholder="Create your own Burger here.." value="" id="enter_text">
+                <input type="text" name="burger_name" class="form-control form-control-lg"
+                    placeholder="Create your own Burger here.." value="" id="enter_text">
 
 
                 <br>
