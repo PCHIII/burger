@@ -19,7 +19,7 @@ p {
 h1 {
     color: white;
     font-family: 'Modak', cursive;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 /* 
 hr {
