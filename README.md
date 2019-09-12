@@ -16,10 +16,26 @@ In this assignment, we created a burger logger with MySQL, Node, Express, Handle
 
 - - -
 - - -
+Initial Page:
 
 ![](public/assets/img/readme.JPG)
+- - -
+Devour an Initial Burger:
 
+![](public/assets/img/readme1.JPG)
+- - -
+Create a Chili Cheese Burger:
 
+![](public/assets/img/readme2.JPG)
+- - -
+Add it to Created Burgers:
+
+![](public/assets/img/readme3.JPG)
+- - -
+
+Devour your create Burger:
+
+![](public/assets/img/readme4.JPG)
 
 
 - - -
