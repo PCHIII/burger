@@ -1,5 +1,6 @@
-# burger
-# Node Express Handlebars
+# Burger App
+- - - 
+
 
 ### Overview:
 
@@ -13,7 +14,7 @@ In this assignment, we created a burger logger with MySQL, Node, Express, Handle
 
 * Your app will store every burger in a database, whether devoured or not.
 
-
+- - -
 - - -
 
 ![](public/assets/img/readme.JPG)
@@ -21,13 +22,14 @@ In this assignment, we created a burger logger with MySQL, Node, Express, Handle
 
 
 
-
+- - -
+- - -
 ### Directory structure:
 
 
 
 ```
-.
+
 ├── config
 │   ├── connection.js
 │   └── orm.js
@@ -67,13 +69,3 @@ In this assignment, we created a burger logger with MySQL, Node, Express, Handle
  
 - - -
 
-### Hosting on Heroku
-
-Now that we have a backend to our applications, we use Heroku for hosting. Please note that while **Heroku is free**, it will request credit card information if you have more than 5 applications at a time or are adding a database.
-
-Please see [Heroku’s Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details.
-
-- - -
-
-
-- - -
