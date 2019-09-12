@@ -12,12 +12,12 @@
         <div class="col-sm-6 text-center enter_selection">
 
             <form action="/burgers/create" method="POST">
-                <input type="text" name="burger_name" class="form-control bg-warning"
+                <input type="text" name="burger_name" class="form-control bg-dark text-white"
                     placeholder="Create your own Burger here.." value="" id="enter_text">
 
 
                 
-                <button type="submit" class="btn btn-outline-warning mt-3" id="text-enter-button">Submit It!</button>
+                <button type="submit" class="btn btn-outline-warning btn-sm mt-3" id="text-enter-button">Submit It!</button>
             </form>
 
         </div>
@@ -67,7 +67,7 @@
         <div class="col-sm-4 text-center" class="task">
             {{#each burger_data}}
             {{#if this.devoured}}
-            <input class="form-control bg-warning" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly>
+            <input class="form-control bg-light" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly>
             {{/if}}
             {{/each}}
         </div>
