@@ -8,13 +8,15 @@
         </div>
 </div>
 <br>
-<br>
+
 
         <!-- Left column -->
-        <div class="container">
+        <div class="container bg-dark border border-white rounded">
             <div class="row">
                 <div class="col-lg-6 justify-content-start">
-                {{!-- <br> --}}
+                    
+                     <p class="db_bur pt-2 ml-3 ">- CREATED BURGERS -</p>
+                <hr> 
                     {{#each burger_data}}
                     {{#unless this.devoured}}
                     <!-- <div class="col-sm-12 text-center"> -->
@@ -30,7 +32,7 @@
                                 </form>
                             <br> 
 
-                        {{!-- </div>  --}}
+                         {{!-- </div>   --}}
                 <!-- {{!-- </div> --}} -->
             <!-- {{!-- </div>> --}} -->
         
@@ -47,9 +49,9 @@
         <!-- <div class="container"> -->
             
         <div class="col-lg-6"> 
-             <p class="db_bur">DEVOURED BURGERS</p>
+             <p class="db_bur pt-2 ml-3">- DEVOURED BURGERS -</p>
            <!-- <div class="row justify-content-center"> -->
-       
+       <hr>
         
         <!-- <div class="col-sm-4 text-center" class="task"> -->
             {{#each burger_data}}

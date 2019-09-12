@@ -13,6 +13,7 @@ height: 150px;
 p {
 
     color: white;
+    /* font-family: 'Modak', cursive; */
     /* text-align: center; */
 }
 
@@ -23,10 +24,20 @@ h1 {
     font-size: 50px;
     /* font-weight: bold; */
 }
-/* 
-.db_br {
-    text-align: center;
+
+hr {
+    border-color: yellow;
 }
+
+img {
+    /* border-color: white; */
+    border-radius: 30%;
+}
+
+/* .db_bur {
+    color: white;
+    font-family: 'Modak', cursive;
+} */
 /* ::placeholder { */
     /* color: white; !important;
 } */
