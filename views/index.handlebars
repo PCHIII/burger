@@ -1,5 +1,6 @@
+
 <div class="container">
-    {{!-- <div class="row"> --}}
+    <!-- {{!-- <div class="row"> --}} -->
         <div class="col-sm-12 text-center mt-1" id="top-ban">
             <h1>EAT ZE BEARGER</h1>
 
@@ -7,35 +8,20 @@
         </div>
 </div>
 <br>
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-sm-6 text-center enter_selection">
+<br>
 
-            <form action="/burgers/create" method="POST">
-                <input type="text" name="burger_name" class="form-control bg-dark text-white"
-                    placeholder="Create your own Burger here.." value="" id="enter_text">
-
-
-                
-                <button type="submit" class="btn btn-outline-warning btn-sm mt-3" id="text-enter-button">Submit It!</button>
-            </form>
-
-        </div>
-    </div>
-</div>
-        
-        <br>
+        <!-- Left column -->
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 text-center" class="task">
-                
+                <div class="col-lg-6 justify-content-start">
+                {{!-- <br> --}}
                     {{#each burger_data}}
                     {{#unless this.devoured}}
-                    <div class="col-sm-12 text-center">
+                    <!-- <div class="col-sm-12 text-center"> -->
                         <p>{{this.burger_name}}</p>
-                    </div>
+                    <!-- </div> -->
 
-                        <div class="col-sm-12 text-center">
+                        {{!-- <div class="col-lg-2">  --}}
                                 <form method="POST" action="/burgers/update?_method=PUT" class="button-size">
                                 <input type="hidden" name="burger_id" type="text" value={{this.id}}>
 
@@ -44,33 +30,52 @@
                                 </form>
                             <br> 
 
-                        </div>
-                {{!-- </div> --}}
-            {{!-- </div>> --}}
+                        {{!-- </div>  --}}
+                <!-- {{!-- </div> --}} -->
+            <!-- {{!-- </div>> --}} -->
         
 
                 {{/unless}}
                 {{/each}}
 
              </div> 
-        </div> 
-</div>
+        <!-- </div>  -->
+<!-- </div> -->
       
-        <br>
-        <div class="container">
+        
+        <!-- right coloumn -->
+        <!-- <div class="container"> -->
             
-        {{!-- <div class="row"> --}}
-             <p style="center">DEVOURED BURGERS</p>
-           <div class="row justify-content-center">
+        <div class="col-lg-6"> 
+             <p class="db_bur">DEVOURED BURGERS</p>
+           <!-- <div class="row justify-content-center"> -->
        
         
-        <div class="col-sm-4 text-center" class="task">
+        <!-- <div class="col-sm-4 text-center" class="task"> -->
             {{#each burger_data}}
             {{#if this.devoured}}
             <input class="form-control bg-light" type="text" placeholder="{{this.id}}. {{this.burger_name}}" readonly>
             {{/if}}
             {{/each}}
-        </div>
+        <!-- </div> -->
     </div>
 </div> 
+    </div>
 
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row justify-content-center"> 
+            <div class="col-sm-6 text-center enter_selection">
+                <form action="/burgers/create" method="POST">
+                    <input type="text" name="burger_name" class="form-control bg-dark text-white"
+                        placeholder="Create your own Burger here.." value="" id="enter_text">
+                    <button type="submit" class="btn btn-outline-warning btn-sm mt-3" id="text-enter-button">Submit It!</button>
+                </form>
+    
+            </div>
+         </div> 
+    </div>   
+            <br>
