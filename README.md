@@ -21,7 +21,7 @@ Initial Page:
 
 ![](public/assets/img/readme.JPG)
 - - -
-Devour an Initial Burger:
+Devour a Burger from Created Burger List:
 
 ![](public/assets/img/readme1.JPG)
 - - -
@@ -34,7 +34,7 @@ Add it to Created Burgers:
 ![](public/assets/img/readme3.JPG)
 - - -
 
-Devour your create Burger:
+Devour your Created Burger:
 
 ![](public/assets/img/readme4.JPG)
 
