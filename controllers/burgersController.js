@@ -1,7 +1,10 @@
 var express = require('express');
 var router = express.Router();
+
+// Import the model (burger.js) 
 var burger = require('../models/burger.js');
 
+// create routes
 router.get('/', function(req,res) { 
     burger.all(function(burger_data){
         console.log(burger_data);
@@ -24,5 +27,5 @@ router.post('/burgers/create', function(req,res){
         res.redirect('/');
     })
 })
-
+// Export routes for server.js to use.
 module.exports = router;
