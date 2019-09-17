@@ -3,7 +3,7 @@
 ## Deployed on Heroku <a href="https://gtburgr.herokuapp.com/" rel="nofollow"> here.</a>
 
 
-### Overview:
+## Overview:
 
 In this assignment, we created a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!). Be sure to follow the MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
@@ -41,7 +41,35 @@ Devour your Created Burger:
 
 - - -
 - - -
-### Directory structure:
+
+
+## Tech used:
+
+* Bootstrap
+
+* Handlebars
+
+* JavaScript
+
+* JQuery
+
+* Node.js
+
+* ORM
+
+* MySQL
+
+* Express 
+
+* Heroku 
+
+* Font Awesome 
+
+* Google Fonts
+
+- - -
+- - -
+## Directory structure:
 
 
 
